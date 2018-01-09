@@ -1,6 +1,6 @@
 # Vectorized monolayer perceptron
 
-This is a simple perceptron made with [Simple Linear Algebra for C#] https://github.com/HectorPulido/Simple_Linear_Algebra) , is a neural network that can calcule Xor Xnor And Or via Stochastic gradient descent backpropagation with Relu or Sigmoid as Activation function.
+This is a simple perceptron made with [Simple Linear Algebra for C#]https://github.com/HectorPulido/Simple_Linear_Algebra) , is a neural network that can calcule Xor Xnor And Or via Stochastic gradient descent backpropagation with Relu or Sigmoid as Activation function.
 
 There is a lot to improve, like csv read, gpu implementation, regularization, but is functional.
  
