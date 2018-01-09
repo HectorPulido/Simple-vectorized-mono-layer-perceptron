@@ -5,7 +5,13 @@ This is a simple perceptron made with [Simple Linear Algebra for C#](https://git
 There is a lot to improve, like csv read, gpu implementation, regularization, but is functional.
  
 ## How use it
-Just go to the project and open Program.cs
+Just go to the project and open Program.cs and run it, you can change the dataset changing X and Y variables
+
+## How use Relu
+0. Change all sigmoid function, for relu function
+1. a3 must have no Nonlinear function Matrix a3 = z3;
+2. because of that Delta3 has not derivated Matrix Delta3 = a3Error * 1;
+3. The learning rate must be smaller, like 0.001 
 
 ## Where can i learn more
 On my Youtube channel (spanish) are a lot of information about Machine learning and Neural networks
