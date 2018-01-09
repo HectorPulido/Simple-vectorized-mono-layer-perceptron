@@ -7,3 +7,6 @@ C:\Users\ASUS\Downloads\FromGithub\Simple-Perceptron\SimpleNeuralNetwork\SimpleN
 C:\Users\ASUS\Downloads\FromGithub\Simple-vectorized-mono-layer-perceptron\SimpleNeuralNetwork\SimpleNeuralNetwork\bin\Debug\SimpleNeuralNetwork.exe.config
 C:\Users\ASUS\Downloads\FromGithub\Simple-vectorized-mono-layer-perceptron\SimpleNeuralNetwork\SimpleNeuralNetwork\obj\Debug\SimpleNeuralNetwork.exe
 C:\Users\ASUS\Downloads\FromGithub\Simple-vectorized-mono-layer-perceptron\SimpleNeuralNetwork\SimpleNeuralNetwork\obj\Debug\SimpleNeuralNetwork.pdb
+C:\Users\ASUS\Downloads\FromGithub\Simple-vectorized-mono-layer-perceptron\SimpleNeuralNetwork\SimpleNeuralNetwork\bin\Debug\SimpleNeuralNetwork.exe
+C:\Users\ASUS\Downloads\FromGithub\Simple-vectorized-mono-layer-perceptron\SimpleNeuralNetwork\SimpleNeuralNetwork\bin\Debug\SimpleNeuralNetwork.pdb
+C:\Users\ASUS\Downloads\FromGithub\Simple-vectorized-mono-layer-perceptron\SimpleNeuralNetwork\SimpleNeuralNetwork\obj\Debug\SimpleNeuralNetwork.csprojResolveAssemblyReference.cache
