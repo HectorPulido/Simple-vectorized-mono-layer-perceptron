@@ -1,0 +1,6 @@
+C:\Users\ASUS\Downloads\FromGithub\Simple-Perceptron\SimpleNeuralNetwork\SimpleNeuralNetwork\bin\Debug\SimpleNeuralNetwork.exe.config
+C:\Users\ASUS\Downloads\FromGithub\Simple-Perceptron\SimpleNeuralNetwork\SimpleNeuralNetwork\bin\Debug\SimpleNeuralNetwork.exe
+C:\Users\ASUS\Downloads\FromGithub\Simple-Perceptron\SimpleNeuralNetwork\SimpleNeuralNetwork\bin\Debug\SimpleNeuralNetwork.pdb
+C:\Users\ASUS\Downloads\FromGithub\Simple-Perceptron\SimpleNeuralNetwork\SimpleNeuralNetwork\obj\Debug\SimpleNeuralNetwork.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Downloads\FromGithub\Simple-Perceptron\SimpleNeuralNetwork\SimpleNeuralNetwork\obj\Debug\SimpleNeuralNetwork.exe
+C:\Users\ASUS\Downloads\FromGithub\Simple-Perceptron\SimpleNeuralNetwork\SimpleNeuralNetwork\obj\Debug\SimpleNeuralNetwork.pdb
