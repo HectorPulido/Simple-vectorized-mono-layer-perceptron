@@ -9,6 +9,8 @@ namespace SimpleNeuralNetwork
 {
     class Program
     {
+        const double Epsilon = 0.01; // Epsilon is a value near to 0
+
         static void Main(string[] args)
         {
             //Parameters
@@ -16,24 +18,30 @@ namespace SimpleNeuralNetwork
             int hiddenCount = 5;
             int outputCount = 4;
             int examplesCount = 4;
-            double learningRate = 0.2;
+            double learningRate = 0.1;
             Random r = new Random();
 
-            //Training data           // INPUT
-            Matrix x = new double[,] { { 0, 0}, 
-                                        { 0, 1}, 
-                                        { 1, 0}, 
-                                        { 1, 1} };  
-                                        //DESIRED OUTPUT
+            //Training data           //INPUT
+            Matrix x = new double[,] { { 0, 0 }, 
+                                       { 0, 1 }, 
+                                       { 1, 0 }, 
+                                       { 1, 1 }};  
+                                    //DESIRED OUTPUT
                                     //XNOR AND OR XOR
             Matrix y = new double[,] { { 1, 0, 0, 0 }, 
-                                        { 0, 0, 1, 1 }, 
-                                        { 0, 1, 1, 1 }, 
-                                        { 1, 1, 1, 0 } }; 
+                                       { 0, 0, 1, 1 }, 
+                                       { 0, 1, 1, 1 }, 
+                                       { 1, 1, 1, 0 }}; 
 
             //Weight init
             Matrix w1 = (Matrix.Random(inputCount + 1, hiddenCount , r) - 0.5) * 2.0;
             Matrix w2 = (Matrix.Random(hiddenCount + 1, outputCount, r) - 0.5) * 2.0;
+
+            // TO USE RELU
+            // 0. Change all sigmoid function, for relu function
+            // 1. a3 must have no Nonlinear function Matrix a3 = z3;
+            // 2. because of that Delta3 has not derivated Matrix Delta3 = a3Error * 1;
+            // 3. The learning rate must be smaller, like 0.001            
 
             for (int l = 0; l < 5001; l++) //epoch
             {
@@ -56,7 +64,7 @@ namespace SimpleNeuralNetwork
                 w2 -= (a2.T * Delta3) * learningRate;
                 w1 -= (a1.T * Delta2) * learningRate;
 
-                double loss = a3Error.abs.average;
+                double loss = a3Error.abs.average * examplesCount;
                 Console.WriteLine("Loss: " + loss);
 
                 if (l % 1000 == 0)
@@ -81,7 +89,6 @@ namespace SimpleNeuralNetwork
                 {
                     double sig = 1.0 / (1.0 + Math.Exp(-a[i, j]));
                     a[i, j] = sig * (1.0 - sig);
-
                 }
                 else
                 {
@@ -90,6 +97,23 @@ namespace SimpleNeuralNetwork
             }, m.x, m.y);
 
             return a;
-        } 
+        }
+        static Matrix relu(Matrix m, bool derivated = false)
+        {
+            double[,] a = m;
+            Matrix.MatrixLoop((i, j) =>
+            {
+                if (derivated)
+                {
+                    a[i, j] = a[i,j] > 0 ? 1 : Epsilon;
+                }
+                else
+                {
+                    a[i, j] = a[i, j] > 0 ? a[i, j] : 0;
+                }
+            }, m.x, m.y);
+
+            return a;
+        }
     }
 }
