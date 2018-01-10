@@ -16,6 +16,10 @@ Just go to the project and open Program.cs and run it, you can change the datase
 ## Where can i learn more
 On my Youtube channel (spanish) are a lot of information about Machine learning and Neural networks
 https://www.youtube.com/channel/UCS_iMeH0P0nsIDPvBaJckOw
+You can also look at the generalized Example of This 
+https://github.com/HectorPulido/Vectorized-multilayer-neural-network
+Or Look at a Non Vectorized multilayer perceptronExample
+https://github.com/HectorPulido/Multi-layer-perceptron
 
 ## Patreon
 Please consider Support on Patreon
