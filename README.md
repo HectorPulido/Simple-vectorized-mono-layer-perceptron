@@ -14,11 +14,11 @@ Just go to the project and open Program.cs and run it, you can change the datase
 3. The learning rate must be smaller, like 0.001 
 
 ## Where can i learn more
-On my Youtube channel (spanish) are a lot of information about Machine learning and Neural networks
+- On my Youtube channel (spanish) are a lot of information about Machine learning and Neural networks
 - https://www.youtube.com/channel/UCS_iMeH0P0nsIDPvBaJckOw
-You can also look at the generalized Example of This 
+- You can also look at the generalized Example of This 
 - https://github.com/HectorPulido/Vectorized-multilayer-neural-network
-Or Look at a Non Vectorized multilayer perceptronExample
+- Or Look at a Non Vectorized multilayer perceptronExample
 - https://github.com/HectorPulido/Multi-layer-perceptron
 
 ## Patreon
